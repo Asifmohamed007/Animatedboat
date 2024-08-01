@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Boat Website</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- THIS PROJECT BELONGS TO ASIF MOHAMED MOHIDEEN FROM CHENNAI - "https://asifmohamed-portfolio.netlify.app/" -->
+    <!-- I am Asif Mohamed Mohideen,
+    a recent graduate from Jerusalem College of Engineering in Chennai, where I completed my Bachelor's Degree in Information Technology (B.Tech) in 2024. Throughout my academic journey, I have developed a strong foundation in various aspects of IT, with a particular interest in front-end development. * As a fresher, I have focused my learning and projects on front-end technologies, where I’ve gained hands-on experience in HTML, CSS, and JavaScript. I am passionate about creating intuitive and engaging user interfaces that enhance user experience and contribute to the overall success of web applications. * During my studies, I completed several projects that allowed me to apply my skills in practical scenarios, such as developing responsive web designs and interactive websites. These projects not only solidified my technical abilities but also taught me the importance of collaboration, problem-solving, and continuous learning. * I am eager to bring my enthusiasm for front-end development to a dynamic team where I can contribute, grow, and continue to build on my knowledge and skills. I am particularly interested in opportunities that allow me to work on innovative projects and leverage my creativity to solve real-world problems.
+    
+    Portfolio link: https://asifmohamed-portfolio.netlify.app/ -->
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <img src="#" alt="logo" class="logo" /> -->
+      <ul>
+        <li><a href="#" class="active"> HOME </a></li>
+        <li><a href="#"> PRODUCTS </a></li>
+        <li><a href="#"> SHOP </a></li>
+        <li><a href="#"> ABOUT </a></li>
+        <li><a href="#"> CONTACT </a></li>
+      </ul>
+    </header>
+
+    <section class="main">
+      <img src="img/stars1.webp" id="stars" />
+      <h2 class="design" style="
+        color: #f3f3f3; /* Text color */
+        font-family: 'Playfair Display', serif; /* Font style */
+        font-size: 36px; /* Font size */
+        font-weight: bold; /* Font weight */
+        text-align: center; /* Center align */
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+        padding: 15px; /* Padding around text */
+        border-bottom: 4px solid #4A90E2; /* Bottom border for emphasis */
+        margin: 20px 0; /* Margin above and below */
+        transition: color 0.4s ease, transform 0.4s ease, text-shadow 0.4s ease; /* Smooth transition for color, transform, and shadow */
+        cursor: pointer; /* Pointer cursor */
+    " onmouseover="this.style.color='#F06'; this.style.transform='scale(1.1)'; this.style.textShadow='6px 6px 12px rgba(0, 0, 0, 0.5)';"
+       onmouseout="this.style.color='#4A90E2'; this.style.transform='scale(1)'; this.style.textShadow='4px 4px 8px rgba(0, 0, 0, 0.3)';">
+        ASIF
+    </h2>
+      
+      <img src="img/moon2.webp" id="moon" />
+      <img src="img/mountains3.webp" id="mountain3" />
+      <img src="img/mountains4.webp" id="mountain4" />
+      <img src="img/river5.webp" id="rivers" />
+      <img src="img/boat7.webp" id="boat" />
+      <img src="img/mountains7.webp" id="mountain7" />
+    </section>
+
+     <!-- --------------------------  footer ---------------------------------------- --> 
+
+	 <footer class="footer">
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+		<ul class="social-icon">
+			<li class="social-icon__item"><a class="social-icon__link" href="#">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link" href="#">
+					<ion-icon name="logo-twitter"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link" href="#">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link" href="#">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a></li>
+		</ul>
+		<ul class="menu">
+			<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">About</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+		</ul>
+		<p>&copy;2024 Asif | All Rights Reserved</p>
+	</footer>
+
+
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+
+    <script src="main.js"></script>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor" data-cursor></div>
+
+    
+        <!-- CUSTOM CURSOR -->
+<script>
+          const cursor = document.querySelector(".custom-cursor");
+        const hoverElements = document.querySelectorAll("a, button");
+        document.addEventListener("mousemove", function (e) {
+        cursor.style.top = e.clientY + "px";
+        cursor.style.left = e.clientX + "px";
+        });
+        hoverElements.forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+        cursor.classList.add("hover-effect");
+        });
+        element.addEventListener("mouseleave", () => {
+        cursor.classList.remove("hover-effect");
+        });
+        });
+</script>
+  </body>
+</html>

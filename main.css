@@ -1,0 +1,277 @@
+/* I am Asif Mohamed Mohideen,
+a recent graduate from Jerusalem College of Engineering in Chennai, where I completed my Bachelor's Degree in Information Technology (B.Tech) in 2024. Throughout my academic journey, I have developed a strong foundation in various aspects of IT, with a particular interest in front-end development. * As a fresher, I have focused my learning and projects on front-end technologies, where I’ve gained hands-on experience in HTML, CSS, and JavaScript. I am passionate about creating intuitive and engaging user interfaces that enhance user experience and contribute to the overall success of web applications. * During my studies, I completed several projects that allowed me to apply my skills in practical scenarios, such as developing responsive web designs and interactive websites. These projects not only solidified my technical abilities but also taught me the importance of collaboration, problem-solving, and continuous learning. * I am eager to bring my enthusiasm for front-end development to a dynamic team where I can contribute, grow, and continue to build on my knowledge and skills. I am particularly interested in opportunities that allow me to work on innovative projects and leverage my creativity to solve real-world problems.
+
+Portfolio link: https://asifmohamed-portfolio.netlify.app/ */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#1d5d9b, #000);
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  z-index: 10;
+}
+
+header .logo {
+  width: 200px;
+  height: 100px;
+  opacity: 1;
+  background-color: #fff;
+}
+
+header .logo:hover {
+  color: #444444;
+  opacity: 0.6;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 50px;
+}
+
+header ul li a {
+  padding: 4px 10px;
+}
+
+header ul li a:hover,
+.active {
+  background: #fff;
+  color: #200016;
+  border-radius: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, #200016, transparent);
+}
+
+#moon {
+  mix-blend-mode: screen;
+  transform: translateY(80px);
+}
+
+.design {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transform: translateY(-190px);
+}
+
+.content {
+  color: white;
+  padding: 30px;
+}
+
+.content h2 {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.content p {
+  margin: 20px;
+}
+
+
+/* ------------------------footer css ----------------------------------- */
+
+
+
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+      background-position-x: 1000px;
+  }
+
+  100% {
+      background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+      background-position-x: -1000px;
+  }
+
+  100% {
+      background-positon-x: 0px;
+  }
+}
+
+
+ /* CUSTOM CUROR */
+            
+ .custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px; /* Cursor width */
+  height: 25px; /* Cursor height */
+  background-color: #ffffff; /* Solid color for the cursor */
+  border-radius: 50%; /* Circle shape */
+  pointer-events: none; /* Ensure cursor doesn't interfere with other elements */
+  z-index: 9999; /* Ensure cursor is above all other content */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for zoom effect */
+  transform: translate(-50%, -50%); /* Center cursor based on mouse position */
+  transform-origin: center; /* Center the origin of the transform */
+  mix-blend-mode: difference; /* Blend mode to make the cursor transparent in the center */
+}
+
+.hover-effect {
+  width: 80px; /* Enlarged width on hover */
+  height: 80px; /* Enlarged height on hover */
+}
+
+#cursor-blur {
+height: 500px;
+width: 500px;
+background-color: rgba(150, 193, 30, 0.3);
+border-radius: 50%;
+position: fixed;
+filter: blur(80px);
+z-index: 9;
+transition: all linear 0.4s;
+}
